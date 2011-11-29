@@ -31,7 +31,6 @@ public class MobSpawnSignBlockListener extends BlockListener{
 				p.sendMessage("[RedstoneMobSpawner] You do not have permission to create a spawner");
 				Block b = e.getBlock();
 				b.setType(Material.AIR);
-				//b.getWorld().spawn(b.getLocation(), Sign.class);
 				return;
 			}
 			CreatureType ct = null;
@@ -65,7 +64,6 @@ public class MobSpawnSignBlockListener extends BlockListener{
 						quantity = Integer.parseInt(sign.getLine(2));
 					}
 					for(int i=0; i<quantity; i++){
-						//broadcast(String.valueOf(i));
 						w.spawnCreature(spawn, c);
 					}
 					lastTime = System.currentTimeMillis();
