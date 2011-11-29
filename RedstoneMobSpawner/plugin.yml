@@ -1,0 +1,11 @@
+name: RedstoneMobSpawner
+main: com.socaldevs.minecraft.plugins.RedstoneMobSpawner
+version: 1
+permissions:
+    RedstoneMobSpawner.*:
+        description: Gives access to all RedstoneMobSpawner abilities
+        children:
+            RedstoneMobSpawner.create: true
+    RedstoneMobSpawner.create:
+        description: Allows user to create a RedstoneMobSpawner sign
+        default: op
